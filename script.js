@@ -1,6 +1,10 @@
-const knapp = document.getElementById("knapp");
-const status = document.getElementById("status");
+// årtal i footer
+document.getElementById("year")?.append(new Date().getFullYear());
 
-knapp.addEventListener("click", () => {
-  status.textContent = "Du klickade på knappen! 🎉";
+// mobilmeny
+const btn = document.querySelector(".nav-toggle");
+const links = document.querySelector(".nav-links");
+btn?.addEventListener("click", () => {
+  const open = links.classList.toggle("open");
+  btn.setAttribute("aria-expanded", open ? "true" : "false");
 });

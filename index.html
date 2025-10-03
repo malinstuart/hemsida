@@ -42,7 +42,49 @@
       <p>S...Nån text här.....</p>
     </div>
   </section>
+  <section id="spec" class="section">
+  <div class="container">
+    <h2>Specifikation (rullgardin)</h2>
 
+    <div class="accordion" data-accordion>
+      <button class="acc-item" data-acc>
+        <span>Testmodul – Hårdvara</span>
+        <svg viewBox="0 0 24 24" class="chev" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="acc-panel">
+        <ul>
+          <li>Ström/Spänningsstyrning (CC/CV), mätning av V/I/T</li>
+          <li>PT100/termistorer, kalibrering & filtrering</li>
+          <li>Modulär design: utbytbara last- & sensorkort</li>
+        </ul>
+      </div>
+
+      <button class="acc-item" data-acc>
+        <span>Datainsamling & Lagring</span>
+        <svg viewBox="0 0 24 24" class="chev" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="acc-panel">
+        <ul>
+          <li>Sampling: 1–100 Hz, buffring vid nätverksbortfall</li>
+          <li>Format: JSON/CSV, metadata per körning</li>
+          <li>Lagring: RPi/Server → Permanent Storage (S3/DB)</li>
+        </ul>
+      </div>
+
+      <button class="acc-item" data-acc>
+        <span>Visualisering & API</span>
+        <svg viewBox="0 0 24 24" class="chev" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="acc-panel">
+        <ul>
+          <li>Webb-UI med realtidskurvor (SOC/Spänning/Temperatur)</li>
+          <li>REST/WebSocket för live-data</li>
+          <li>Export & rapportmallar (PDF/CSV)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
   <section id="system" class="section alt">
     <div class="container">
       <h2>System</h2>

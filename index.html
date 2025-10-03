@@ -1,16 +1,85 @@
 <!doctype html>
 <html lang="sv">
 <head>
-  <meta charset="utf-8">
-  <title>Min första hemsida</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OGT – Laddstrategier för elektrifierad kollektivtrafik</title>
+  <meta name="description" content="Simulering, dimensionering och visualisering av elbussars laddinfrastruktur." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
 </head>
 <body>
-  <h1>Hej världen 👋</h1>
-  <p>Det här är min första lilla hemsida!</p>
-  <button id="knapp">Klicka mig</button>
-  <p id="status"></p>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#home">OGT</a>
+      <button class="nav-toggle" aria-label="Meny" aria-expanded="false">☰</button>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#om">Om</a>
+        <a href="#system">System</a>
+        <a href="#grupp">Projektgrupp</a>
+        <a href="#dokument">Dokument</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1>Laddstrategier<br>för elektrifierad kollektivtrafik</h1>
+      <p class="lead">Simulering, dimensionering och visualisering av elbussars laddinfrastruktur.</p>
+      <a class="btn" href="#om">Läs mer</a>
+    </div>
+  </section>
+
+  <section id="om" class="section">
+    <div class="container">
+      <h2>Om</h2>
+      <p>Syftet är att ta fram en simuleringsmiljö för att utvärdera laddstrategier och infrastrukturval.
+         Vi modellerar energiflöden, planerar laddfönster och optimerar effektfördelning.</p>
+    </div>
+  </section>
+
+  <section id="system" class="section alt">
+    <div class="container">
+      <h2>System</h2>
+      <div class="grid">
+        <article class="card"><h3>Simulering</h3><p>Kördata → energimodell → SOC per linje/fordon.</p></article>
+        <article class="card"><h3>Reglering</h3><p>Lastbalansering och prioritering vid begränsad effekt.</p></article>
+        <article class="card"><h3>Visualisering</h3><p>Karta, tidslinjer och flaskhalsdetektering.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="grupp" class="section">
+    <div class="container">
+      <h2>Projektgrupp</h2>
+      <ul class="people">
+        <li><strong>Malin Stuart</strong> – Projektledare</li>
+        <li>Namn 2 – Modellering</li>
+        <li>Namn 3 – Reglering</li>
+        <li>Namn 4 – Visualisering</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="dokument" class="section alt">
+    <div class="container">
+      <h2>Dokument</h2>
+      <ul class="docs">
+        <li><a href="#">Kravspecifikation (PDF)</a></li>
+        <li><a href="#">Designspecifikation (PDF)</a></li>
+        <li><a href="#">Rapport (PDF)</a></li>
+        <li><a href="#">Presentation (PDF)</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> OGT – Linköpings universitet</small>
+    </div>
+  </footer>
 </body>
 </html>

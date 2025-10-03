@@ -16,13 +16,55 @@ body{margin:0;color:var(--ink);background:var(--bg);font-family:Inter,system-ui,
 .nav-toggle{display:none;margin-left:auto;font-size:1.25rem;background:none;border:0;cursor:pointer}
 
 /* HERO */
-.hero{position:relative;min-height:86svh;display:grid;place-items:center;background:url("assets/kretskort.jpeg") center/cover no-repeat fixed}
-.hero-overlay{position:absolute;inset:0;background:radial-gradient(ellipse at 30% 20%,rgba(0,255,90,.12),transparent 55%),rgba(0,0,0,.45)}
-.hero-content{position:relative;text-align:center;color:#fff;padding-top:5rem}
-.hero h1{font-family:"Playfair Display",serif;font-weight:800;line-height:1.05;font-size:clamp(2.4rem,6vw,5.2rem);margin:0 0 .75rem}
-.lead{opacity:.92;font-size:clamp(1.05rem,2.2vw,1.35rem);margin:0 0 1.25rem}
-.btn{display:inline-block;padding:.8rem 1.2rem;border-radius:999px;background:#fff;color:#111;text-decoration:none;font-weight:700;box-shadow:var(--shadow)}
+/* ===== HERO ===== */
+.hero {
+  position: relative;
+  min-height: 86vh;
+  display: grid;
+  place-items: center;
+  background: url("assets/kretskort.jpeg") center/cover no-repeat fixed;
+}
 
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 30% 20%, rgba(0, 255, 90, 0.12), transparent 55%),
+              rgba(0, 0, 0, 0.5); /* mörk overlay */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+  padding-top: 5rem;
+}
+
+.hero h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+  line-height: 1.05;
+  font-size: clamp(2.4rem, 6vw, 5.2rem);
+  margin: 0 0 0.75rem;
+}
+
+.lead {
+  opacity: 0.92;
+  font-size: clamp(1.05rem, 2.2vw, 1.35rem);
+  margin: 0 0 1.25rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.2rem;
+  border-radius: 999px;
+  background: #fff;
+  color: #111;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: var(--shadow);
+}
 /* SEKTIONER */
 .section{padding:6rem 0 5rem}
 .section.alt{background:#fff}

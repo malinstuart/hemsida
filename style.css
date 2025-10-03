@@ -16,7 +16,7 @@ body{margin:0;color:var(--ink);background:var(--bg);font-family:Inter,system-ui,
 .nav-toggle{display:none;margin-left:auto;font-size:1.25rem;background:none;border:0;cursor:pointer}
 
 /* HERO */
-.hero{position:relative;min-height:86svh;display:grid;place-items:center;background:url("assets/bg.jpg") center/cover no-repeat fixed}
+.hero{position:relative;min-height:86svh;display:grid;place-items:center;background:url("assets/kretskort.jpeg") center/cover no-repeat fixed}
 .hero-overlay{position:absolute;inset:0;background:radial-gradient(ellipse at 30% 20%,rgba(0,255,90,.12),transparent 55%),rgba(0,0,0,.45)}
 .hero-content{position:relative;text-align:center;color:#fff;padding-top:5rem}
 .hero h1{font-family:"Playfair Display",serif;font-weight:800;line-height:1.05;font-size:clamp(2.4rem,6vw,5.2rem);margin:0 0 .75rem}
